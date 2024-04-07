@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  twitch_parser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NEXTCLOUD_URL=https://cloud.balage.top/remote.php/dav/calendars/admin/twitch/
+      - USERNAME=admin
+      - PASSWORD=MZ8t9-wJABr-a4Cms-Qmoej-k8dno
+      - ACCESS_TOKEN=gwjbvr4a06l1g6v2hfcnq7c99n0yxf
+      - TWITCH_CHANNELS=740165076,247582617
+      - CLIENT_ID=m6gfnrqw4qmn9trnhdf7s3xrbbgydr
+      - STREAM_LIMIT=10
+      - CALENDAR_NAME=twitch

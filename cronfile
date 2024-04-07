@@ -1,0 +1,2 @@
+# Schedule the execution of parser.py every 12 hours
+0 */12 * * * python /app/parser.py
