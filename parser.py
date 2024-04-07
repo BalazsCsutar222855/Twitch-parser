@@ -8,7 +8,6 @@ from caldav.elements import dav, cdav
 
 def retrieve_broadcaster_schedule(broadcaster_id, access_token, client_id):
     url = f'https://api.twitch.tv/helix/schedule?broadcaster_id={broadcaster_id}'
-    
     headers = {
         'Authorization': f'Bearer {access_token}',
         'Client-ID': client_id
